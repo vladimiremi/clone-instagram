@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 100%;
+	background-color: white;
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+}
+/* Story e Feed */
+.main--content {
+	width: 100%;
+	height: 100%;
+	margin-top: 52px;
+	margin-bottom: 52px;	
+}
+/* Storys */
+.main--content__stories {
+	list-style: none;
+	padding: 8px 16px;
+	overflow-y: hidden;
+	overflow-y: scroll;
+	width: 100%;
+	display:flex;
+	justify-content: flex-start;
+	align-content: center;
+	flex-wrap: nowrap;
+	flex-grow: 1;
+}
+
+.stories__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	height: 64px;
+	width: 64px;
+	padding: .1rem;
+}
+
+.stories__item__new {
+	background-image: linear-gradient(270deg, #ab248a 0%, #f29c4f 100%);
+}
+
+.stories__item+.stories__item {
+	margin-left: 12px;
+}
+
+.stories__item a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.stories__item img {
+	position: relative;
+	width: auto;
+	height: 100%;
+	padding: 0;
+	border: .18rem solid #fff;
+	border-radius: 100%;
+}
+
+/* Feed */
+
